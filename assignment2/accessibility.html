@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	  <meta charset="utf-8">
+	  <title>Assignment 2</title> 
+	  <style>
+		body {
+			text-align: center;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			font-family: "georgia", serif;
+		}
+
+		h2, h3, a, p {	
+			font-family: "verdana", sans-serif;
+		}
+
+		h2, h3 {
+			margin-bottom:10px;
+		}
+		
+		p, h3, .checklist {
+			margin: auto;
+			width:50%;
+			max-width: 1000px;
+			padding-top:25px;
+			text-align: left;
+		}
+
+		img {
+		  margin: 0 20px 0 0;
+		  height: 600px;
+		  width: 1000px;
+		  border: 5px solid black;
+		}
+
+		hr {
+			margin: 30px 0px 30px 0px;
+		}
+		
+		input, label {
+			text-align: left;
+		}
+	  </style>
+	</head> 
+
+	<body> 
+		<h1>Assignment 2, Part 2: Accessibility</h1>
+		<p style="text-align: center;">
+			Case study of a website with an audience that includes disabilities.
+		</p>
+		<hr /> 
+		<div id="va">			
+			<a href="https://www.va.gov/" target="_blank">
+				<img src="va.png" alt="Veterans Affairs Website">
+			</a>
+			
+			<h2>Veterans Affairs</h2>
+			<a href="https://www.va.gov/" target="_blank">Visit Website</a>
+			
+			<h3>Usability Checklist</h3>
+			<div class="checklist">
+				<input type="checkbox" id="check1" name="check1" checked="checked" disabled="true">
+				<label for="check1">Page title</label><br>
+				<input type="checkbox" id="check2" name="check2" checked="checked" disabled="true">
+				<label for="check2">Alt text </label><br>
+				<input type="checkbox" id="check3" name="check3" checked="checked" disabled="true">
+				<label for="check3">Readable text (headings, contrast ratio, resizing)</label><br>
+				<input type="checkbox" id="check4" name="check4" checked="checked" disabled="true">
+				<label for="check4">Interaction (keyboard access, focus, forms, errors)</label><br>
+				<input type="checkbox" id="check5" name="check5" checked="checked" disabled="true">
+				<label for="check5">General (moving content, multimedia alternatives, structure)</label><br>
+			</div>
+			<h3>Summary</h3>
+			<p>
+				Overall, the VA's homepage is very aligned with best practices for accessibility.  
+				Given their audience of veterans, it seems likely that they've designed with accessiblity in mind.
+				One image is missing alternative text, but it is simply a visual arrow, whereas all large and descriptive images do contain alternate text.
+				There are a few redundant links, but the link text is different, and it seems valid if people have different questions to potentially direct them to the same linked pages.
+				The webpage also has coronavirus up top as an alert, making it easy to see pertinent information quickly, especially content that may not be permanent, but is currently relevant.
+				This homepage is very disability friendly (as it should be), but note that the text heavy page is also somewhat flat and information heavy.
+			</p>
+			<br />
+		</div>	
+		<hr />
+
+		<small>Copyright 2019, Kathryn Pritchard</small> 
+	</body> 
+</html> 
