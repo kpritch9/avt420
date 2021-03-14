@@ -1,0 +1,28 @@
+Inquire about a Custom Order
+1. Open website
+2. Browse available products to confirm idea for order
+3. Look for information on site (Click FAQ)
+	2a. See if accept custom order
+	2b. Look for pricing guides
+	2c. Identify turnaround times
+2. Look for contact form/email
+3. Collect information
+	3a. Name
+	3b. Custom product Details
+	3c. Expected date/delivery
+	3d. Contact information
+
+
+Purchase a box of chocolates
+1. Open website
+2. Shop for product
+	2a. Browse existing products
+	2b. Search for specific product
+3. Add product to cart
+4. Checkout 
+	4a.  Add shipping information
+	4b.  Add payment information
+	4c.  Place order
+	4d.  Receive confirmation (screen)
+	4e.  Receive confirmation (email)
+	4f.  Receive estimated shipping/tracking

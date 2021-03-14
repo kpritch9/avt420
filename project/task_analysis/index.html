@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	  <meta charset="utf-8">
+	  <title>Project: Task Analysis</title> 
+	  <style>
+		body {
+			text-align: center;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			font-family: "georgia", serif;
+		}
+
+		h2, h3, a, p {	
+			font-family: "verdana", sans-serif;
+		}
+
+		h2, h3 {
+			margin-bottom:10px;
+		}
+		
+		p{
+			margin: auto;
+			width:50%;
+			max-width: 1000px;
+			padding-top:25px;
+			text-align: left;
+		}
+
+		img {
+		  margin: 0 20px 0 0;
+		  height: 600px;
+		  max-width: 1000px;
+		  border: 5px solid black;
+		}
+
+		hr {
+			margin: 30px 0px 30px 0px;
+		}
+		
+		input, label {
+			text-align: left;
+		}
+		#list, #list>ol {
+			margin: auto;
+			width:50%;			
+			display:inline-block;
+		}
+		li {
+			text-align:left;
+			display:block;
+		}
+		ol {
+			counter-reset: item;
+		}
+		li:before {
+			content: counters(item, ".") " ";
+			counter-increment: item;
+		}
+	  </style>
+	</head> 
+
+	<body> 
+		<h1>Project: Task Analysis</h1>
+			<h2>Task Diagram: Textual</h2>
+			<h3>Place a Custom Order</h3>
+			<br/>
+			<div id="list">				
+				<ol>
+					<li>Open Website</li>
+					<li>Browse available products
+						<ol>
+						<li>Confirm quality of products</li>
+						<li>Identify similar products</li>
+						<li>Confirm idea for request</li>
+						</ol>
+					</li>
+					<li>Look for information on site
+						<li>See if accept custom order</li>
+						<li>Look for pricing guides</li>
+						<li>Identify turnaround times</li>					
+					</li>
+					<li>Click contacy</li>
+					<li>Collect information
+						<ol>
+							<li>Name</li>
+							<li>Custom product details</li>
+							<li>Expected date/delivery</li>
+							<li>Contact information</li>
+						</ol>
+					</li>
+				</ol>
+			</div>
+		<hr /> 
+		<div id="va">	
+			<h2>Task Diagram: Diagram</h2>
+			<h3>Buy a Box of Chocolates</h3>
+			<img src="taskanalysis_buychoc.png" alt="Task Diagram: Buy Chocolates">
+			
+		</div>	
+		<hr />
+
+		<small>Copyright 2021, Kathryn Pritchard</small> 
+	</body> 
+</html> 
