@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Landing Page</title>
+<style>
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/*** END CLEAR ***/
+
+	body { 
+		font-family: 'Trebuchet MS', sans-serif;
+	}
+	.main {
+		margin-top: 50px;
+		display:block;
+		padding: 0 20px;
+	}
+	header {
+		padding-bottom: 50px;
+		position: fixed;
+		overflow: hidden;
+		width: 100%;
+		top: 0;
+		height: 20px;
+		background-color: white;
+		border-bottom: 1px solid black;
+	}
+	#header-img {
+		float: left;
+		max-width: 200px;
+		margin-top: -50px;
+	}
+	#nav-bar {
+		float: right;
+		margin: 20px 20px 0 0;
+	}
+	.nav-link {
+		margin-left: 30px;
+	}
+	.section {
+		display: block;
+	}
+
+	h2 {
+		font-size: 1.5em; 
+		margin: 50px 0 20px 0;
+	}
+	
+	.flex-container {
+		display:flex;
+		background-color: #c69c6d;
+		justify-content: space-around;
+	}
+	
+	.flex-container > div {
+		background-color: #f1f1f1;
+		margin: 10px;
+	}
+	.product {
+		width: 200px;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		.flex-container {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.product {
+			width: 100%;
+			
+		}
+	}
+</style>
+</head>
+
+<body>
+<header id="header">
+	<img src="./bwc_logo.png" id="header-img"/>
+	<nav id="nav-bar">
+		<a href="#shop" class="nav-link">Shop</a>
+		<a href="#videos" class="nav-link">Videos</a>
+		<a href="#blog" class="nav-link">Blog</a>
+		<a href="#contact" class="nav-link">Contact</a>
+	</nav>
+</header>
+<br/><br/>
+<div class="main">
+	<div id="shop" class="section">
+		<h2>Shop</h2>
+		<div class="flex-container">
+			<div>
+				<img src="./caramel_cup.png" class="product" />
+			</div>
+			<div><img src="./caramel_cup.png" class="product" /></div>
+			<div><img src="./caramel_cup.png" class="product" /></div>
+		</div>
+	</div>
+	<div id="videos" class="section">
+		<h2>Featured Video: Gimme Chocolate!</h2>
+		<iframe width="420" height="315"
+		src="https://www.youtube.com/embed/WIKqgE4BwAY">
+		</iframe>
+	</div>
+	<div id="blog" class="section">
+		<h2>Blog</h2>
+		<a href="https://bestwithchocolate.com">Visit the Blog</a>
+	</div>
+	<div id="contact" class="section">
+		<h2>Contact Us</h2>
+		<form action="https://www.freecodecamp.com/email-submit" id="form">
+			<input type="email" name="email" id="email" placeholder="xyz@email.com" />
+			<br /><br />
+			<textarea rows="4" cols="50" name="email-body" form="form">Enter text here...</textarea>
+			<br /><br />
+			<input type="submit" />
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
