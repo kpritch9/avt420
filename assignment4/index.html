@@ -49,12 +49,13 @@
 		top: 0;
 		height: 20px;
 		background-color: white;
-		border-bottom: 1px solid #3F2712;
+		border-bottom: 2px solid #000074;
+		border-top: 2px solid #000074;
 	}
 	#header-img {
 		float: left;
 		max-width: 200px;
-		margin-top: -40px;
+		margin-top: -8px;
 	}
 	#nav-bar {
 		float: right;
@@ -66,8 +67,8 @@
 	footer {
 		margin-top:30px;
 		height: 50px;
-		background-color: #c69c6d;
-		color: #3F2712;
+		background-color: #000074 ;
+		color: #fff;
 		text-align: center;
 	}	
 	
@@ -78,9 +79,30 @@
 	h2 {
 		font-size: 1.5em; 
 		margin: 50px 0 20px 0;
+		color: #000074;
 	}
+	
+	h3 {
+		margin-bottom:5px;
+	}
+	
+	a {
+		color: #000074;
+	}
+	
+	a:hover {
+		color: #0DFFFF;
+	}
+	
 	p {
 		padding-top: 8px;
+		margin: auto;
+		max-width: 500px;
+	}
+	
+	.flex-p {
+		max-width: 200px;
+		font-size: .75em;
 	}
 	
 	#email, #email-body {
@@ -89,16 +111,21 @@
 	
 	.flex-container {
 		display:flex;
-		background-color: #c69c6d;
 		justify-content: space-around;
 	}
 	
 	.flex-container > div {
 		background-color: #f1f1f1;
 		margin: 10px;
+		padding-bottom: 10px;
 	}
 	.product {
 		width: 200px;
+		margin-bottom: 10px;
+	}
+	
+	.subtitle {
+		padding: 10px 0px;
 	}
 	
 	@media only screen and (max-width: 768px) {
@@ -117,40 +144,58 @@
 
 <body>
 <header id="header">
-	<img src="./bwc_logo.png" id="header-img"/>
+	<img src="./shiba_logo.png" id="header-img"/>
 	<nav id="nav-bar">
-		<a href="#shop" class="nav-link">Shop</a>
+		<a href="#shop" class="nav-link">Services</a>
 		<a href="#videos" class="nav-link">Videos</a>
-		<a href="#blog" class="nav-link">Blog</a>
+		<a href="#rescue" class="nav-link">Rescue</a>
 		<a href="#contact" class="nav-link">Contact</a>
 	</nav>
 </header>
 <br/><br/>
 <div class="main">
 	<div id="shop" class="section">
-		<h2>Shop</h2>
+		<h2>Services</h2>
 		<div class="flex-container">
 			<div>
-				<img src="./caramel_cup.png" class="product" />
+				<img src="./shiba_bath.png" class="product" />
+				<br/>
+				<span class="subtitle">Grooming</span>
+				<p class="flex-p">Baths, nail trimming, and more!</p>
 			</div>
-			<div><img src="./caramel_cup.png" class="product" /></div>
-			<div><img src="./caramel_cup.png" class="product" /></div>
+			<div>
+				<img src="./shiba_balloons.png" class="product" />
+				<br/>
+				<span class="subtitle">Walks</span>
+				<p class="flex-p">30 minutes, 1 hour, or multiple!</p>
+			</div>
+			<div>
+				<img src="./shiba_pizza.png" class="product" />				
+				<br/>
+				<span class="subtitle">Feeding</span>
+				<p class="flex-p">Only the best food for your pup!</p>
+			</div>
 		</div>
 	</div>
 	<div id="videos" class="section">
-		<h2>Featured Video: Gimme Chocolate!</h2>
+		<h2>Videos</h2>
+		<h3>Four Reasons to Walk Your Dog in a Well-fitted Harness</h3>
 		<iframe width="420" height="315"
-		src="https://www.youtube.com/embed/WIKqgE4BwAY">
+		src="https://www.youtube.com/embed/XedheK6Mwcs">
 		</iframe>
 	</div>
-	<div id="blog" class="section">
-		<h2>Blog</h2>
-		<a href="https://bestwithchocolate.com">
-			Visit Best With Chocolate
-			<br/><br/>
-			<img src="./gingerbread-truffles.jpg" style="max-width: 300px;"/>
+	<div id="rescue" class="section">
+		<h2>Rescue of the Month: DC SIR</h2>
+		<p>DC Shiba Inu Rescue is a Washington D.C. based rescue organization.  
+		They specialize in helping dogs of the Shiba Inu breed, and wonderful 
+		volunteers house and work with the dogs until they're placed in the 
+		paw-fect homes!</p>
+		<br/>
+		<a href="https://dcsir.org/">
+			<img src="./dcsir.jpg" style="max-width: 300px;"/>
+			<br/>
+			Visit DC Shiba Inu Rescue
 		</a>
-		<p> Visit the blog for recipes and more!</p>
 	</div>
 	<div id="contact" class="section">
 		<h2>Contact Us</h2>
@@ -165,7 +210,7 @@
 </div>
 <footer>
 	<p class="little">
-		Copyright 2020. Katie Pritchard.<br />
+		Copyright 2021. Katie Pritchard.<br />
 		All Rights Reserved.
 	</p>
 </footer>
